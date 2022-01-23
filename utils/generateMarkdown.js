@@ -72,7 +72,7 @@ function generateMarkdown(data) {
   ${data.test}
   ## [Questions](#table-of-contents)
   Contact me with any questions at the following:
-  [GitHub](https://github.com/${data.githubUsername})
+  [GitHub](https://github.com/${data.username})
   [Email: ${data.email}](mailto:${data.email})
   `;
 };

@@ -82,8 +82,11 @@ function writeToFile(fileName, data) {
 // Function to initialize app
 function init() {
     inquirer.prompt(questions).then(answers => {
-       const markdown = generateMarkdown(answers);
-       writeToFile('README.md', markdown)
+       
+        const markdown = generateMarkdown(answers);
+        console.log(answers);
+        console.log("Your README.md file has been generated!");
+        writeToFile('README.md', markdown)
 
     });
 };
