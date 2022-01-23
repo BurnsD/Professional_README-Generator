@@ -19,6 +19,12 @@ const questions = [
         message: "What is the name of your GitHub repo?",
         name: 'repo',
     },
+    // Email
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is an Email people can contact you at about this project?'
+    },
     // Title
     {
         type: 'input',
@@ -38,20 +44,14 @@ const questions = [
     { 
         type: 'input',
         name: 'installation',
-        message: 'Describe the steps required to install this project or skip.'
+        message: 'What does the user need to install to run this app (ie...dependencies)? (Skip with "Enter")'
 
     },
     // Usage
     {
         type: 'input',
         name: 'usage',
-        message: 'Provide instructions and examples for use.'
-    },
-    // Credits
-    {
-        type: 'input',
-        name: 'credits',
-        message: 'List your collaborators, if any. Along with any third-party assets or tutorials followed.'
+        message: 'How is the app used? Give instructions'
     },
     // License 
     {
@@ -59,19 +59,6 @@ const questions = [
         name: 'license',
         message: 'What license would you like to use?',
         choices: ['MIT', 'APACHE 2.0', 'ISC', 'Mozilla', 'Academic', 'GNU', 'Open']
-    },
-    // Badges
-    {
-        type: 'input',
-        name: 'badges',
-        message: ''
-    },
-    // Features
-    {
-        type: 'input',
-        name: 'features',
-        message: 'If your project has a lot of features, add some description to them here.',
-        
     },
     // Contributing
     {
@@ -83,14 +70,14 @@ const questions = [
     {
         type: 'input',
         name: 'test',
-        message: 'If you have written any tests, provide examples on how to run them here.'
+        message: 'What commands are needed to test this app?'
     },
 ];
 
 // Writes README file
 function writeToFile(fileName, data) {
     fs.writeFileSync(path.join(process.cwd(), fileName), data)
-}
+};
 
 // Function to initialize app
 function init() {
