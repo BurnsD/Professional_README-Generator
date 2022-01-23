@@ -77,6 +77,7 @@ const questions = [
 // Writes README file
 function writeToFile(fileName, data) {
     fs.writeFileSync(path.join(process.cwd(), fileName), data)
+    console.log("Your README.md file has been generated!");
 };
 
 // Function to initialize app
@@ -85,7 +86,6 @@ function init() {
        
         const markdown = generateMarkdown(answers);
         console.log(answers);
-        console.log("Your README.md file has been generated!");
         writeToFile('README.md', markdown)
 
     });
