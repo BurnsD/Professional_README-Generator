@@ -50,7 +50,9 @@ const questions = [
     },
     // Badges
     {
-    
+        type: 'input',
+        name: 'credits',
+        message: ''
     },
     // Features
     {
