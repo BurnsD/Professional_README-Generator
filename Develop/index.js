@@ -11,7 +11,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'what is the title of your project?'
+        message: 'What is the title of your project?'
 
     },
     
@@ -26,40 +26,52 @@ const questions = [
     { 
         type: 'input',
         name: 'installation',
-        message: 'Describe the steps required to install this project.'
+        message: 'Describe the steps required to install this project or skip.'
 
     },
     // Usage
     {
         type: 'input',
         name: 'usage',
-        message: ''
+        message: 'Provide instructions and examples for use.'
     },
     // Credits
     {
         type: 'input',
         name: 'credits',
-        message: ''
+        message: 'List your collaborators, if any. Along with any third-party assets or tutorials followed.'
     },
     // License 
     {
         type: 'list',
         name: 'license',
         message: 'What license would you like to use?',
-        choices: ['MIT', 'APACHE 2.0']
+        choices: ['MIT', 'APACHE 2.0', 'ISC', 'Mozilla', 'Academic', 'GNU', 'Open']
     },
     // Badges
     {
         type: 'input',
-        name: 'credits',
+        name: 'badges',
         message: ''
     },
     // Features
     {
-        type: '',
-        name: '',
-        message: '',
+        type: 'input',
+        name: 'features',
+        message: 'If your project has a lot of features, add some description to them here.',
         
+    },
+    // Contributing
+    {
+        type: 'input',
+        name: 'contrubiting',
+        message: 'If you would like other developers to contribute, add guidelines for how to do so here.'
+    },
+    // Tests
+    {
+        type: 'input',
+        name: 'test',
+        message: 'If you have written any tests, provide examples on how to run them here.'
     },
 ];
 
