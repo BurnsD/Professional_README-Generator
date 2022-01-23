@@ -45,20 +45,22 @@ function generateMarkdown(data) {
   # ${data.title}
   
   ${renderLicenseBadge(data.license)}
+  
   ## Table-of-Contents
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  ${renderLicenseLink(data.license)}
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
-    
+  ${renderLicenseLink(data.license)}
+
   ## [Description]
   ${data.description}
    
   ## [Installation](#table-of-contents)
   ${data.installation}
+
   ## [Usage](#table-of-contents)
   ${data.usage}
 
