@@ -3,9 +3,7 @@
 function renderLicenseBadge(license) {
   //
   if(license !== 'no license'){
-    return `
-    ![badge](https://img.shields.io/badge/license-${license}-blue)
-    `;
+    return `![badge](https://img.shields.io/badge/license-${license}-blue)`;
   } else {
       return ' ';
     };
@@ -16,9 +14,7 @@ function renderLicenseBadge(license) {
 
 function renderLicenseLink(license) {
   if (license !== 'no license'){
-    return `
-    [${license}](https://choosealicense.com/licenses/${license})
-    `;
+    return `[${license}](https://choosealicense.com/licenses/${license})`;
   } else {
     return ' ';
   };
@@ -44,7 +40,7 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
   
-  ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
   
   ## Table-of-Contents
   * [Description](#description)
@@ -53,9 +49,10 @@ function generateMarkdown(data) {
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
-  ${renderLicenseLink(data.license)}
+${renderLicenseLink(data.license)}
 
-  ## [Description]
+ 
+  ## [Description](#table-of-contents)
   ${data.description}
    
   ## [Installation](#table-of-contents)
@@ -64,7 +61,7 @@ function generateMarkdown(data) {
   ## [Usage](#table-of-contents)
   ${data.usage}
 
-  ${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}
   ## [Contributing](#table-of-contents)
     
    
