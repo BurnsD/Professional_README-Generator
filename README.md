@@ -15,7 +15,7 @@
   
   
   ## [Description](#table-of-contents)
-  This is a application that will generate a README.md file after capturing user input through the command line
+  This is an application that will generate a README.md file after capturing user input through the command line
    
   ## [Installation](#table-of-contents)
   To install this program clone the repo locally. Ensure you have Node.js and npm inquirer installed and run through terminal.
