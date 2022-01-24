@@ -44,14 +44,14 @@ const questions = [
     { 
         type: 'input',
         name: 'installation',
-        message: 'What does the user need to install to run this app (ie...dependencies)? (Skip with "Enter")'
+        message: 'What does the user need to install to run this app (ie... dependencies)? (Skip with "Enter")'
 
     },
     // Usage
     {
         type: 'input',
         name: 'usage',
-        message: 'How is the app used? Give instructions'
+        message: 'How is the app used? Give instructions.'
     },
     // License 
     {
@@ -64,13 +64,13 @@ const questions = [
     {
         type: 'input',
         name: 'contrubiting',
-        message: 'If you would like other developers to contribute, add guidelines for how to do so here.'
+        message: 'If you would like other developers to contribute, add guidelines for how to do so here. (Skip with "Enter")'
     },
     // Tests
     {
         type: 'input',
         name: 'test',
-        message: 'What commands are needed to test this app?'
+        message: 'What commands are needed to test this app? (Skip with "Enter")'
     },
 ];
 
