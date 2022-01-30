@@ -1,5 +1,5 @@
 
-  # This is a sample title
+  # Team-Profile-Generator
   
 ![badge](https://img.shields.io/badge/license-Open-blue)
   
@@ -15,13 +15,13 @@
 
  
   ## [Description](#table-of-contents)
-  I am generating a sample README.md using the Professional_README.md-Generator 
+  An application that will take user input from the command line and generate an HTML file organizing employee profiles by there applied roles. Demonstrating the use of OOP and TDD using Jest
    
   ## [Installation](#table-of-contents)
-  This is a sample.
+  User should clone rpository and download Node. Also featured is the inquirer module.
 
   ## [Usage](#table-of-contents)
-  This is a sample Readme.md testing that the application functions work of this generator
+  Use your command line terminal and start the project with "node index.js"
 
 
   ## [License](#table-of-contents)
@@ -32,9 +32,9 @@
     
    
   ## [Tests](#table-of-contents)
-  
+  The command "npm test" will run the test through Jest
   ## [Questions](#table-of-contents)
   Contact me with any questions at the following:
   [GitHub](https://github.com/BurnsD)
-  [Email: Dustin@DustinBurnsDev.com](mailto:Dustin@DustinBurnsDev.com)
+  [Email: DustinBurnsDev@Gmail.com](mailto:DustinBurnsDev@Gmail.com)
   
